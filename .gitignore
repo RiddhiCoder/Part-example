@@ -7,4 +7,4 @@ dart/part_example/web/packages
 dart/part_example/packages
 
 composer.phar
-files/*
+files/*/*
