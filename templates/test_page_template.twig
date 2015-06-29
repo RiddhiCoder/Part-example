@@ -1,0 +1,58 @@
+{% extends "main_template.twig" %}
+
+{% block head %}
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'/>
+    <style type="text/css">
+        #Content {
+            width: 500px;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 110px;
+            margin: -55px 0 0 -255px;
+            background-color: #2f4d6d;
+            color: #ffffff;
+            -webkit-box-shadow: 0 0 3px #000000;
+            -moz-box-shadow: 0 0 3px #000000;
+            box-shadow: 0 0 3px #000000;
+        }
+
+
+        #Content h1 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 30px;
+            padding: 20px 20px 5px ;
+            font-weight: normal;
+        }
+
+        #Content p{
+            padding: 0 20px;
+            font-size: 13px;
+        }
+
+        #Content p a {
+            font-size: 13px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+    </style>
+{% endblock %}
+
+{% block content %}
+
+    <section id="Content">
+
+        <h1>
+            Congrats!
+        </h1>
+
+        <p>
+            You have successfully set up the Part example!<br />
+            How about logging in? Go to the <a href="/login">login page</a>.
+        </p>
+
+    </section>
+
+{% endblock %}

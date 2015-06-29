@@ -7,3 +7,5 @@ php -r "readfile('https://getcomposer.org/installer');" | php
 make update-dev
 
 make update-db
+
+php setup.php
