@@ -1,0 +1,10 @@
+.idea
+vendor
+site-config.xml
+dart/part_example/pubspec.lock
+dart/part_example/web/*.js*
+dart/part_example/web/packages
+dart/part_example/packages
+
+composer.phar
+files/*

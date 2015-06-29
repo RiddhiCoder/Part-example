@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link type="text/css" href="/_common/css/main_style.css?r={{ last_modified }}" rel="stylesheet"/>
+    {% if current_user == null %}
+        <script type="application/dart" src="/_dart/main_site_script.dart?r={{ last_modified }}"></script>
+    {% else %}
+    <link type="text/css" href="_common/css/user_settings_style.css?r={{ last_modified }}" media="screen"
+          rel="stylesheet"/>
+    <link type="text/css" href="/_common/css/content_editor.css?r={{ last_modified }}" media="screen"
+          rel="stylesheet"/>
+    <link type="text/css" href="/_common/css/fonts.css?r={{ last_modified }}" media="screen" rel="stylesheet"/>
+        <script type="application/dart" src="/_dart/main_site_script_logged_in.dart?r={{ last_modified }}"></script>
+    {% endif %}
+    <link type="text/css" href="/_css/main_style.css?r={{ last_modified }}" rel="stylesheet"/>
+    {% block head %}{% endblock %}
+
+    <title>Part-example {% page_element "\\ChristianBudde\\Part\\view\\page_element\\TitlePageElementImpl" %}</title>
+</head>
+<body class="{{ debug_mode?"debug":"" }}">
+{% embed "user_settings.twig" %}
+{% endembed %}
+{% block content %}
+{% endblock %}
+<script type="text/javascript" src="/_dart/packages/browser/dart.js"></script>
+</body>
+</html>

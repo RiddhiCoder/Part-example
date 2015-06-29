@@ -1,0 +1,6 @@
+name: lenevemb_dk
+author: Christian Budde Christensen <christi@n-bud.de>
+dependencies:
+  part:
+    path: ../../vendor/christianbud.de/part/dart/part/
+  browser: any

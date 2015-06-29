@@ -1,0 +1,36 @@
+<config xmlns="http://christianbud.de/site-config">
+    <debugMode>false</debugMode>
+    <enableUpdater>true</enableUpdater>
+    <tmpFolder path="/path/to/tmp/folder" />
+    <log path="/path/to/log/file" />
+    <siteInfo>
+        <domain name="example" extension="com"/>
+        <owner name="John Doe" mail="test@example.com" username="root"/>
+    </siteInfo>
+    <MySQLConnection>
+        <host>localhost</host>
+        <database>database</database>
+        <username>username</username>
+        <password>password</password>
+        <folders>
+            <folder path="vendor/christianbud.de/part/db/part" name="part"/>
+        </folders>
+    </MySQLConnection>
+    <AJAXTypeHandlers>
+        <class>ChristianBudde\Part\controller\ajax\type_handler\BackendTypeHandlerImpl</class>
+    </AJAXTypeHandlers>
+    <defaultPages>
+        <page alias="" template="_login" id="login">Login</page>
+        <page alias="" template="_logout" id="logout">Logout</page>
+        <page alias="" template="_500" id="_500">Error 500 Internal server error</page>
+    </defaultPages>
+    <templateCollection>
+        <templates path="templates">
+            <template filename="main_template.twig">_main</template>
+        </templates>
+        <templates path="vendor/christianbud.de/part/templates" />
+    </templateCollection>
+    <preScripts>
+        <class>ChristianBudde\Part\util\script\UserLoginUpdateCheckPreScriptImpl</class>
+    </preScripts>
+</config>
