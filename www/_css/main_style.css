@@ -1,0 +1,61 @@
+#Content {
+    padding: 0;
+    background-color: #2f4d6d;
+    color: #ffffff;
+    -webkit-box-shadow: 0 0 3px #000000;
+    -moz-box-shadow: 0 0 3px #000000;
+    box-shadow: 0 0 3px #000000;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 360px;
+    margin-left: -180px;
+}
+
+#Content .editable{
+    min-height: inherit;
+}
+
+.content h1,
+.preview h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+
+}
+
+.content > *, .preview > *{
+    padding: 5px 30px;
+}
+
+.content > *:first-child,
+.preview > *:first-child{
+    padding-top: 30px;
+}
+
+.content > *:last-child,
+.preview > *:last-child{
+    padding-bottom: 30px;
+}
+
+
+
+.content p a,
+.preview p a {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.content > p,
+.preview > p{
+    width:300px
+}
+
+#Content > .suggestion{
+    padding: 10px 30px;
+    font-size: 10px;
+    background-color: #aa6e11;
+    border-top: 4px solid #7c4f10;
+    font-weight: bold;
+}

@@ -22,5 +22,13 @@ $factory = isset($factory) ? $factory : new ChristianBudde\Part\SiteFactoryImpl(
 $pageOrder = $factory->buildBackendSingletonContainer($config)->getPageOrderInstance();
 $page = $pageOrder->createPage('home');
 $page->setTitle('First page');
-$page->setTemplate('test_page');
+$page->setTemplate('Test page');
 $pageOrder->setPageOrder($page, 0);
+$page->getContent('main')->addContent(' <h1>
+                Congrats!
+            </h1>
+
+            <p>
+                You have successfully set up the Part example!<br/>
+                How about logging in? Go to the <a href="/login">login page</a>.
+            </p>');
