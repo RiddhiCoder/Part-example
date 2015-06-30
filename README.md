@@ -6,7 +6,8 @@ A small example of a website using [Part](https://github.com/budde377/Part). Not
 Installing the example on a linix machine (Ubuntu) can be done by
 
 1. Clone this repo `git clone git@github.com:budde377/Part-example.git`
-2. Run setup `setup.sh`
+2. Update the `site-config.xml` file (e.g. with database, log, and temp-folder-info) 
+3. Run setup `setup.sh`
  
 ## Running
 
