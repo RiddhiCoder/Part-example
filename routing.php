@@ -13,5 +13,6 @@ if ( file_exists(__DIR__ . '/www/' . $path)) {
     return false; // serve the requested resource as-is.
 } else {
     $_GET['page'] = isset($_SERVER['PATH_INFO'])?substr($_SERVER['PATH_INFO'],1):null;
-    include_once 'www/index.php';
+    chdir("www");
+    require_once 'index.php';
 }

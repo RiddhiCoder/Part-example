@@ -8,19 +8,20 @@
     "packages": [
         {
             "name": "christianbud.de/part",
-            "version": "v1.3.1",
+            "version": "v1.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/budde377/Part.git",
-                "reference": "810eab41483ae93dd68d19e50e000a8b2a448942"
+                "reference": "387c66a22ad25e65ef93fab203c1ad383eca4419"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/budde377/Part/zipball/810eab41483ae93dd68d19e50e000a8b2a448942",
-                "reference": "810eab41483ae93dd68d19e50e000a8b2a448942",
+                "url": "https://api.github.com/repos/budde377/Part/zipball/387c66a22ad25e65ef93fab203c1ad383eca4419",
+                "reference": "387c66a22ad25e65ef93fab203c1ad383eca4419",
                 "shasum": ""
             },
             "require": {
+                "ext-imagick": "*",
                 "php": ">=5.5",
                 "twig/twig": "1.*"
             },
@@ -46,29 +47,33 @@
                 }
             ],
             "description": "A way better CMS",
-            "time": "2015-06-15 06:10:38"
+            "time": "2015-08-26 07:58:29"
         },
         {
             "name": "twig/twig",
-            "version": "v1.18.2",
+            "version": "v1.21.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "e8e6575abf6102af53ec283f7f14b89e304fa602"
+                "reference": "ca8d3aa90b6a01c82e07909fe815d6b443e75a23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/e8e6575abf6102af53ec283f7f14b89e304fa602",
-                "reference": "e8e6575abf6102af53ec283f7f14b89e304fa602",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ca8d3aa90b6a01c82e07909fe815d6b443e75a23",
+                "reference": "ca8d3aa90b6a01c82e07909fe815d6b443e75a23",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.7"
             },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~2.7"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.18-dev"
+                    "dev-master": "1.21-dev"
                 }
             },
             "autoload": {
@@ -103,7 +108,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-06-06 23:31:24"
+            "time": "2015-08-26 08:58:31"
         }
     ],
     "packages-dev": [],

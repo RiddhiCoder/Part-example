@@ -31,7 +31,7 @@
             <template filename="logout_template.twig">_logout</template>
             <template filename="error500_template.twig">_500</template>
             <template filename="error404_template.twig">_404</template>
-            <template filename="test_page_template.twig">test_page</template>
+            <template filename="test_page_template.twig">Test page</template>
         </templates>
         <templates path="vendor/christianbud.de/part/templates" />
     </templateCollection>
